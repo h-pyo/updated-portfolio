@@ -1,9 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProjectItem = ({setRemove, image, title, link}) => {
+const ProjectItem = ({image, title, link}) => {
   return (
-    <Link to={link} style={{ textDecoration: 'none', color: 'inherit' }} onClick={() => {setRemove(true)}}>
+    <Link to={link} style={{ textDecoration: 'none', color: 'inherit' }}>
       <div className='project-border'>
         <div>
           <div className="project-title">{title}</div>

@@ -12,7 +12,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-
 const Skills = () => {
   useEffect(() => {
     AOS.init();
@@ -22,7 +21,7 @@ const Skills = () => {
       <div>
         <div className="header">Skills and Experience</div>
         <div className="resume">
-          <a className='resume-button' href='https://drive.google.com/file/d/1wjLtCGASYlNIUx_DaO4gtKjBHy5ihFQe/view' target='_blank'>Resume</a>
+          <a className='resume-button' href='https://drive.google.com/file/d/1wjLtCGASYlNIUx_DaO4gtKjBHy5ihFQe/view' target='_blank' rel='noreferrer'>Resume</a>
         </div>
         <div className="skill-container">
           <SkillItem

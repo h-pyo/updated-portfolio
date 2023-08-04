@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-const Projects = ({ setRemove }) => {
+const Projects = () => {
   useEffect(() => {
     AOS.init();
   }, [])
@@ -15,13 +15,11 @@ const Projects = ({ setRemove }) => {
         <div className="header">Projects</div>
         <div className="project-container">
           <ProjectItem
-            setRemove={setRemove}
             image={todo}
             title="Todo List Website"
             link="project-1"
           />
           <ProjectItem
-            setRemove={setRemove}
             image={weather}
             title="Weather App"
             link="project-2"

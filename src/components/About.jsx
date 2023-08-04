@@ -4,14 +4,8 @@ import volleyball from '../images/volleyball.png';
 import book from '../images/book.png';
 import dumbbell from '../images/dumbbell.png';
 import binoculars from '../images/binoculars.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 const About = () => {
-  useEffect(() => {
-    AOS.init();
-  }, [])
   return (
     <section className='about' data-aos="fade-up" data-aos-once="true"  id='about-me'>
 

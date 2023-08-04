@@ -1,5 +1,3 @@
-import React from 'react'
-
 const AboutIcons = ({image}) => {
   return (
     <div className='icon-border'>

@@ -1,17 +1,9 @@
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 const Contact = () => {
   const form = useRef();
-
-  useEffect(() => {
-    AOS.init();
-  }, [])
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -48,11 +40,11 @@ const Contact = () => {
 
           <form ref={form} onSubmit={sendEmail}>
             <div className="name-email">
-              <input className="input-name" placeholder="Your name" type="text" name="user_name" />
-              <input className="input-email" placeholder="Your email" type="email" name="user_email" />
+              <input required className="input-name" placeholder="Your name" type="text" name="user_name" />
+              <input required className="input-email" placeholder="Your email" type="email" name="user_email" />
             </div>
             <div className="message-area">
-              <textarea className="input-message" placeholder="Send a message" name="message" />
+              <textarea required className="input-message" placeholder="Send a message" name="message" />
             </div>
             <div className="contact-submit">
               <input className="submit-button" type="submit" value="Send Message" />

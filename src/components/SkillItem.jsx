@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SkillItem = ({image, description}) => {
   return (
     <div className="skill-border">

@@ -1,13 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import 'animate.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  useEffect(() => {
-    AOS.init();
-  }, [])
   return (
     <nav className='nav-header' data-aos="fade-left" data-aos-once="true">
       <div className='menu' onClick={() => setMenuOpen(!menuOpen)}>
