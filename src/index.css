@@ -38,8 +38,8 @@ body {
 
 /*--------------------------Nav Section-----------------*/
 .nav-header {
+  padding-top: 15px;
   top:0;
-  height: 80px;
   position: fixed;
   z-index: 1000;
   display: flex;
@@ -48,10 +48,33 @@ body {
   background-color: transparent;
 }
 
+nav .menu {
+  position: absolute;
+  z-index: 100000;
+  top: 20px;
+  right: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+}
+
+nav .menu span {
+  height: 5px;
+  width: 100%;
+  background-color: var(--clr--light);
+  border-radius: 2px;
+}
+
+.nav-container {
+  width: 100%;
+}
+
 .nav-list {
   display: flex;
   list-style-type: none;
-  flex: 4;
+  flex: 1;
   justify-content: right;
   padding-right:50px;
   align-items: center;
@@ -59,15 +82,21 @@ body {
 
 .list-item a {
   color: var(--clr--light);
-  margin-left: 10px;
+  margin-left: 30px;
   font-size: 1.3rem;
+  text-decoration: none;
 }
 
+.list-item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 
 /*----------------------Home Section--------------*/
 #animated-area {
   position: relative;
   height: 100vh;
+  margin-bottom: 100px;
 }
 
 #canvas {
@@ -112,11 +141,19 @@ body {
   margin-right: 15px;
 }
 
+.social-icons a {
+  color: inherit;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
 /*-------------------About Section--------------*/
 .about {
   display: grid;
   place-content: center;
-  padding-top: 100px;
+  padding: 60px 100px;
   width: 100vw;
   max-width: 100%;
 }
@@ -146,7 +183,6 @@ body {
   flex: 2;
   margin-top: 30px;
 }
-
 
 .text {
   font-size: 1.2rem;
@@ -196,7 +232,7 @@ body {
 .skills {
   display: grid;
   place-content: center;
-  padding-top: 125px;
+  padding: 60px 100px;
   width: 100vw;
   max-width: 100%;
   display: flex;
@@ -263,7 +299,7 @@ body {
 /*-----------------Projects Section---------------------------*/
 
 .projects {
-   padding-top: 125px;
+   padding: 60px 100px;
    display: grid;
    place-content: center;
 }
@@ -438,18 +474,20 @@ form {
   margin-right: 20px;
   height: 40px;
   padding: 10px;
-  border-radius: 7px;
+  border-radius: 8px;
   width: 215px;
   font-size: 1.1rem;
+  font-family: inherit;
 }
 
 .input-email {
   height: 40px;
   padding: 10px;
-  border-radius: 7px;
+  border-radius: 8px;
   width: 215px;
   font-size: 1.1rem;
   margin-bottom: 8px;
+  font-family: inherit;
 }
 
 .message-area {
@@ -461,10 +499,10 @@ form {
 .input-message {
   width: 100%;
   padding: 13px;
-  border-radius: 7px;
+  border-radius: 8px;
   height: 150px;
   font-size: 0.95rem;
-
+  font-family: inherit;
 }
 
 .contact-submit {
@@ -480,4 +518,124 @@ form {
   height: 45px;
   margin-left: calc(50% - 80px);
   font-weight: bold;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+
+/*-----------------------------Media Queries-------------------*/
+@media (max-width: 1200px) {
+  .picture {
+    width: 400px;
+    margin: 0;
+    align-self: center;
+  }
+  .about-container {
+    width: 450px;
+  }
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .icons {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 40px;
+  }
+  .icon-border {
+    margin-right: 60px;
+    margin-bottom: 10px;
+  }
+  .skill-container {
+    width: 600px;
+  }
+
+  .project-container {
+    width: 800px;
+  }
+
+  .contact-container {
+    width: 450px;
+  }
+  .submission-area {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    padding: 15px 15px 50px 15px;
+  }
+  form {
+    display:flex;
+    flex-direction: column;
+  }
+  .name-email {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .input-name,
+  .input-email {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    padding: 0;
+    display: grid;
+    place-content: center;
+  }
+
+  .description-area {
+    margin-left: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-border {
+    margin-left: 30px;
+  }
+}
+
+ @media (max-width: 775px) {
+  nav .menu {
+    display: flex;
+  }
+  .nav-header{
+    padding:0;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    background-color: var(--clr--dark2);
+    opacity: 0.95;
+  }
+  .nav-list.open {
+    display: flex;
+  }
+  .list-item {
+    padding: 8px 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .list-item a {
+    text-decoration: none;
+  }
+  .list-item a:hover {  
+    transition: 100s;
+    text-underline-offset: 5px;
+    text-decoration: underline;
+  }
+  .skill-container, 
+  .project-container {
+    width: 450px;
+  }
+
+  .icons {
+    width: 425px;
+  }
 }

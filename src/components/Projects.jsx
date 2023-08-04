@@ -1,11 +1,16 @@
-import React from 'react'
 import ProjectItem from './ProjectItem';
 import todo from '../images/todo-image.JPG';
 import weather from '../images/weather-image.JPG';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
-const Projects = ({setRemove}) => {
+const Projects = ({ setRemove }) => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section className="projects" id='project-section'>
+    <section className="projects" id='project-section' data-aos="fade-up" data-aos-once="true">
       <div>
         <div className="header">Projects</div>
         <div className="project-container">

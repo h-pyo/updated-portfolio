@@ -1,4 +1,3 @@
-import React from 'react';
 import SkillItem from './SkillItem';
 import js from '../images/js.png';
 import HTML from '../images/html-5.png';
@@ -9,11 +8,17 @@ import python from '../images/python.png';
 import react from '../images/atom.png';
 import node from '../images/nodejs.png';
 import boot from '../images/bootstrap.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section className='skills' id='qualifications'>
+    <section className='skills' data-aos="fade-up" data-aos-once="true" id='qualifications'>
       <div>
         <div className="header">Skills and Experience</div>
         <div className="resume">

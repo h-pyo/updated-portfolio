@@ -1,9 +1,16 @@
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Contact = () => {
   const form = useRef();
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,7 +23,7 @@ const Contact = () => {
       });
   };
   return (
-    <section className="contact" id='contact-form'>
+    <section className="contact" id='contact-form' data-aos="fade-up" data-aos-once="true"> 
       <div className="contact-container">
         <div className="header">Contact Me</div>
 

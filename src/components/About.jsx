@@ -1,14 +1,19 @@
-import React from 'react';
 import profile from '../images/profile.jpg';
 import AboutIcons from './AboutIcons';
 import volleyball from '../images/volleyball.png';
 import book from '../images/book.png';
 import dumbbell from '../images/dumbbell.png';
 import binoculars from '../images/binoculars.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section className='about' id='about-me'>
+    <section className='about' data-aos="fade-up" data-aos-once="true"  id='about-me'>
 
       <div className="about-container">
         <div className="header">About Me</div>

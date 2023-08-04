@@ -11,7 +11,7 @@ const ProjectPage = ({setRemove, image, title, repo, link, description }) => {
         <img src={image} alt="project" className="project-page-image" />
 
         <div className="buttons">
-          <a href={repo} target='_blank' className='repo-button'> <FaGithub /> Github Reposity </a>
+          <a href={repo} target='_blank' className='repo-button'> <FaGithub /> Github Repository </a>
           <a href={link} target='_blank' className='demo-button'> <FaPlay /> Demo</a>
         </div>
 
