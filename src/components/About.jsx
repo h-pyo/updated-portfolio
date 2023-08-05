@@ -17,7 +17,7 @@ const About = () => {
           <div className='about-me-area'>
             <div className="info-paragraph">
               <p className='text'>
-                &#128075; Hi, I'm Harris!! I'm currently an Computer Engineer Undergraduate at Stevens Institute of Technology. I'll be graduating with a Bachelors of Engineering in Computer Engineering with a concentration in Software Engineering and Development in 2024, and finish my Masters Degree the following year, 2025. I've always enjoyed technology, problem solving with others, and plan on pursing this in my future career. In my free time I enjoy playing volleyball, working out, sightseeing, and reading!
+                &#128075; Hi, I'm Harris!! I'm currently majoring in Computer Engineering at Stevens Institute of Technology. I'll be graduating with my Bachelors and a concentration in Software Engineering and Development in 2024. I plan on finishing my Masters Degree the following year in 2025. I've always enjoyed technology, problem solving with others, and hope to be able to purse this in my future career. In my free time I enjoy playing volleyball, working out, sightseeing, and reading!
               </p>
             </div>
             <div className='icons'>

@@ -7,7 +7,7 @@ const ProjectPage = ({ image, title, repo, link, description }) => {
     <article className='project-page' data-aos="fade-down" data-aos-once="true" >
       <Link to='/' className='return-button'><FaArrowLeft /></Link>
       <div className="project-page-container">
-        <div className="header">{title}</div>
+        <div className="project-page-header">{title}</div>
         <img src={image} alt="project" className="project-page-image" />
 
         <div className="buttons">

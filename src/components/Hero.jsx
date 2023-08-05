@@ -14,19 +14,19 @@ const Hero = () => {
       <div className='description-area'>
         <div className='title'>Harris Pyo</div>
         <div className="animated-text">
-          I'm a 
+          I'm 
           <TypeAnimation
             sequence={[
-              " Computer Engineer",
+              " a Computer Engineer",
               1000,
-              " Software Engineer",
+              " a Software Engineer",
               1000,
-              " Undergraduate Researcher",
+              " an Undergraduate Researcher",
               1000,
-              " Volleyball Enthusiast",
+              " a Volleyball Enthusiast",
               1000,
             ]}
-            style={{ fontSize: "1.8rem", color:"#222831" }}
+            style={{ fontSize: "1.7rem", fontWeight: "bold", color:"#222831" }}
             repeat={Infinity}
           />
         </div>
