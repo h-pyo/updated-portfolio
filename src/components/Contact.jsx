@@ -9,9 +9,23 @@ const Contact = () => {
 
     emailjs.sendForm(`${process.env.REACT_APP_serviceId}`, `${process.env.REACT_APP_templateId}`, form.current, `${process.env.REACT_APP_publicKey}`)
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
+        if (document.getElementById('confirmation-message')) {
+          const message = document.getElementById('confirmation-message');
+          message.style.display = 'block';
+          setTimeout(() => {
+            message.style.display = 'none';
+          }, 3000);
+        };
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
+        if (document.getElementById('failure-message')) {
+          const message = document.getElementById('failure-message');
+          message.style.display = 'block';
+          setTimeout(() => {
+            message.style.display = 'none';
+          }, 3000);
+        };
       });
   };
   return (
@@ -49,6 +63,8 @@ const Contact = () => {
             <div className="contact-submit">
               <input className="submit-button" type="submit" value="Send Message" />
             </div>
+            <div id="confirmation-message"> Your message was sent successfully! </div>
+            <div id="failure-message"> Sorry, your message failed to send. Please try again! </div>
           </form>
 
         </div>
