@@ -8,6 +8,8 @@ import python from '../images/python.png';
 import react from '../images/atom.png';
 import node from '../images/nodejs.png';
 import boot from '../images/bootstrap.png';
+import express from '../images/express.png';
+import mongo from '../images/mongo.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -49,6 +51,10 @@ const Skills = () => {
             description="Python"
           />
           <SkillItem
+            image={boot}
+            description="Bootstrap"
+          />
+          <SkillItem
             image={react}
             description="React.js"
           />
@@ -57,8 +63,12 @@ const Skills = () => {
             description="Node.js"
           />
           <SkillItem
-            image={boot}
-            description="Bootstrap"
+            image={express}
+            description="Express.js"
+          />
+          <SkillItem
+            image={mongo}
+            description="MongoDB"
           />
         </div>
       </div>
