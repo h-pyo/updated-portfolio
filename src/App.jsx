@@ -31,7 +31,7 @@ function App() {
           title="Fitness App"
           repo="https://github.com/h-pyo/fitness-app"
           link="https://harris-fitness.netlify.app"
-          description="A fitness website that helps the user track their health. Allows the user to save their workout schedule for the week and save daily entries on their health to keep track. This full stack app uses MongoDB, Express, React, and Node to save, authenticate, and verify user data with their login."
+          description="*Note: Server takes time to start up so inital login may take extra time* A fitness website that helps the user track their health. Allows the user to save their workout schedule for the week and save daily entries on their health to keep track. This full stack app uses MongoDB, Express, React, and Node to save, authenticate, and verify user data with their login."
         />} />
       </Route>
     </Routes>
