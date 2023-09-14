@@ -1,4 +1,4 @@
-import profile from '../images/profile.jpg';
+import profile from '../images/outside-profile-pic.jpg';
 import AboutIcons from './AboutIcons';
 import volleyball from '../images/volleyball.png';
 import book from '../images/book.png';
