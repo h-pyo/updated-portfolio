@@ -10,6 +10,9 @@ import node from '../images/nodejs.png';
 import boot from '../images/bootstrap.png';
 import express from '../images/express.png';
 import mongo from '../images/mongo.png';
+import tailwind from '../images/tailwind.png';
+import typescript from '../images/typescript.png';
+import next from '../images/next.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -69,6 +72,18 @@ const Skills = () => {
           <SkillItem
             image={mongo}
             description="MongoDB"
+          />
+          <SkillItem
+            image={typescript}
+            description="TypeScript"
+          />
+          <SkillItem
+            image={tailwind}
+            description="Tailwind CSS"
+          />
+          <SkillItem
+            image={next}
+            description="Next.js"
           />
         </div>
       </div>
