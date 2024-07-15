@@ -1,7 +1,7 @@
 import ProjectItem from './ProjectItem';
-import todo from '../images/todo-image.JPG';
-import weather from '../images/weather-image.JPG';
-import fitness from '../images/fitness-image.JPG'
+import todo from '../images/todo-image.png';
+import weather from '../images/weather-image.png';
+import fitness from '../images/fitness-image.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';

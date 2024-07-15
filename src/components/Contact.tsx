@@ -3,15 +3,15 @@ import emailjs from '@emailjs/browser';
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
+  const form = useRef<HTMLFormElement>(null);
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm(`${process.env.REACT_APP_serviceId}`, `${process.env.REACT_APP_templateId}`, form.current, `${process.env.REACT_APP_publicKey}`)
+    emailjs.sendForm(`${import.meta.env.REACT_APP_serviceId}`, `${import.meta.env.REACT_APP_templateId}`, form.current!, `${import.meta.env.REACT_APP_publicKey}`)
       .then((result) => {
         console.log(result.text);
-        if (document.getElementById('confirmation-message')) {
-          const message = document.getElementById('confirmation-message');
+        const message = document.getElementById('confirmation-message');
+        if (message) {
           message.style.display = 'block';
           setTimeout(() => {
             message.style.display = 'none';
@@ -19,8 +19,8 @@ const Contact = () => {
         };
       }, (error) => {
         console.log(error.text);
-        if (document.getElementById('failure-message')) {
-          const message = document.getElementById('failure-message');
+        const message = document.getElementById('failure-message');
+        if (message) {
           message.style.display = 'block';
           setTimeout(() => {
             message.style.display = 'none';

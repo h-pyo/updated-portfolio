@@ -2,9 +2,9 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Main from './components/Main';
 import ProjectPage from './components/ProjectPage';
-import todo from './images/todo-image.JPG';
-import weather from './images/weather-image.JPG';
-import fitness from './images/fitness-image.JPG'
+import todo from './images/todo-image.png';
+import weather from './images/weather-image.png';
+import fitness from './images/fitness-image.png'
 
 function App() {
   return (
