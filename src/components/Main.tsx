@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <>
       <Nav />
-      <div id="animated-area">
+      <div className="relative h-[100vh] mb-[100px] bg-gradient-to-b from-[#00ADB5] to-[#222831] ">
         <Hero />
         <ParticleBackground />
       </div>

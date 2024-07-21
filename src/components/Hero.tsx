@@ -10,18 +10,18 @@ const Hero = () => {
     AOS.init();
   }, [])
   return (
-      <section className='home' data-aos="fade-right" data-aos-once="true" id='hero'>
-      <div className='description-area'>
-        <div className='title'>Harris Pyo</div>
-        <div className="animated-text">
+      <section className='md:p-0 md:grid md:place-content-center w-[100vw] px-[50px] max-w-full absolute z-10 bg-transparent' data-aos="fade-right" data-aos-once="true" id='hero'>
+      <div className='md:ml-0 md:items-center md:flex md:flex-col h-[200px] mt-[30vh] ml-[200px]'>
+        <div className='font-bold text-[3.8rem]'>Harris Pyo</div>
+        <div className="sm:text-center text-[1.7rem] font-bold">
           I'm 
           <TypeAnimation
             sequence={[
-              " a Computer Engineer",
-              1000,
               " a Software Engineer",
               1000,
-              " an Undergraduate Researcher",
+              " a Computer Engineer",
+              1000,
+              " an Merck Intern",
               1000,
               " a Volleyball Enthusiast",
               1000,
@@ -30,10 +30,10 @@ const Hero = () => {
             repeat={Infinity}
           />
         </div>
-        <div className="social-icons">
-          <a href='https://drive.google.com/file/d/1wjLtCGASYlNIUx_DaO4gtKjBHy5ihFQe/view?usp=sharing' target='_blank' rel='noreferrer'><IoDocumentText className='social-icon' /></a>
-          <a href='https://www.linkedin.com/in/harris-pyo/' target='_blank' rel='noreferrer'><FaLinkedinIn className='social-icon' /></a>  
-          <a href='https://github.com/h-pyo' target='_blank' rel='noreferrer'><FaGithub className='social-icon' /></a>
+        <div className="mt-[17px] text-[1.5rem] flex">
+          <a href='https://drive.google.com/file/d/1wjLtCGASYlNIUx_DaO4gtKjBHy5ihFQe/view?usp=sharing' target='_blank' rel='noreferrer'><IoDocumentText className='mr-4 text-inherit hover:opacity-80' /></a>
+          <a href='https://www.linkedin.com/in/harris-pyo/' target='_blank' rel='noreferrer'><FaLinkedinIn className='mr-4 text-inherit hover:opacity-80' /></a>  
+          <a href='https://github.com/h-pyo' target='_blank' rel='noreferrer'><FaGithub className='mr-4 text-inherit hover:opacity-80' /></a>
         </div>
       </div>
     </section>

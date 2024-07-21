@@ -11,10 +11,10 @@ const Projects = () => {
     AOS.init();
   }, [])
   return (
-    <section className="projects" id='project-section' data-aos="fade-up" data-aos-once="true">
+    <section className="py-[60px] px-[100px] grid place-content-center" id='project-section' data-aos="fade-up" data-aos-once="true">
       <div>
-        <div className="header">Projects</div>
-        <div className="project-container">
+        <div className="text-[3rem] font-bold text-center underline decoration-2 decoration-[#9ea0a5] underline-offset-[10px]">Projects</div>
+        <div className="lg:w-[800px] sm:w-[400px] flex justify-center flex-wrap w-[1200px] mt-[30px]">
           <ProjectItem
             image={todo}
             title="Todo List Website"
