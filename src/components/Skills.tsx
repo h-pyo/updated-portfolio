@@ -24,16 +24,7 @@ const Skills = () => {
   return (
     <section className='grid place-content-center py-[60px] px-[100px] w-[100vw] max-w-full' data-aos="fade-up" data-aos-once="true" id='qualifications'>
       <div>
-        <div className="text-[3rem] font-bold text-center underline decoration-2 decoration-[#9ea0a5] underline-offset-[10px]">Skills and Experience</div>
-        <div className="mt-[25px] grid place-content-center">
-          <a 
-            className='no-underline text-inherit w-[120px] h-[45px] flex flex-col justify-center text-center font-bold text-[1.3rem] border-solid border-light border-2 rounded-[20px] hover:transition hover:duration-300 hover:bg-light hover:text-dark' 
-            href='https://drive.google.com/file/d/1wjLtCGASYlNIUx_DaO4gtKjBHy5ihFQe/view' 
-            target='_blank' 
-            rel='noreferrer'>
-              Resume
-          </a>
-        </div>
+        <div className="text-[3rem] font-bold text-center underline decoration-2 decoration-[#9ea0a5] underline-offset-[10px]">Skills</div>
         <div className="lg:w-[600px] sm:w-[400px] flex flex-wrap justify-center w-[1200px] mt-[30px]">
           <SkillItem
             image={js}

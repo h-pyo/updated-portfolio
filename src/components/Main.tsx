@@ -5,6 +5,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Nav from './Nav';
 import ParticleBackground from './ParticleBackground';
+import Experience from './Experience';
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
         <ParticleBackground />
       </div>
       <About />
+      <Experience />
       <Skills />
       <Projects />
       <Contact />

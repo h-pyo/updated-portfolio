@@ -19,6 +19,9 @@ const Nav = () => {
           <a className='text-light ml-[30px] text-[1.3rem] no-underline hover:underline underline-offset-[5px]' href='#about-me'>About</a>
         </li>
         <li className='sm:py-3 sm:px-2 sm:w-full sm:text-center'>
+          <a className='text-light ml-[30px] text-[1.3rem] no-underline hover:underline underline-offset-[5px]' href='#experience'>Experience</a>
+        </li>
+        <li className='sm:py-3 sm:px-2 sm:w-full sm:text-center'>
           <a className='text-light ml-[30px] text-[1.3rem] no-underline hover:underline underline-offset-[5px]' href='#qualifications'>Skills</a>
         </li>
         <li className='sm:py-3 sm:px-2 sm:w-full sm:text-center'>

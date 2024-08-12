@@ -6,8 +6,7 @@ const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    emailjs.sendForm(`${import.meta.env.REACT_APP_serviceId}`, `${import.meta.env.REACT_APP_templateId}`, form.current!, `${import.meta.env.REACT_APP_publicKey}`)
+    emailjs.sendForm(`${import.meta.env.VITE_serviceId}`, `${import.meta.env.VITE_templateId}`, form.current!, `${import.meta.env.VITE_publicKey}`)
       .then((result) => {
         console.log(result.text);
         const message = document.getElementById('confirmation-message');
@@ -40,7 +39,7 @@ const Contact = () => {
               <FaEnvelope className="text-[1.5rem] mr-[5px]" />
               <div className="lg:mr-[50px] ml-10 mr-[70px] flex flex-col">
                 <span className="font-bold text-[1.4rem]">Email:</span>
-                <span className="text-[1.1rem]">hpyo@stevens.edu</span>
+                <span className="text-[1.1rem]">harrispyo@gmail.com</span>
               </div>
             </div>
             <div className="flex mb-5 items-center">

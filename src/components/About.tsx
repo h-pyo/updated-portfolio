@@ -17,7 +17,7 @@ const About = () => {
           <div className='flex-grow-2 mt-[30px]'>
             <div className="info-paragraph">
               <p className='text-[1.2rem]'>
-                &#128075; Hi, I'm Harris!! I'm currently majoring in Computer Engineering at Stevens Institute of Technology. I'll be graduating with my Bachelors and a concentration in Software Engineering and Development in 2024. I plan on finishing my Masters Degree the following year in 2025. I've always enjoyed technology, problem solving with others, and hope to be able to pursue this in my future career. In my free time I enjoy playing volleyball, working out, sightseeing, and reading!
+                &#128075; Hi, I'm Harris!! I just graduated from Stevens Institute of Technology with my Bachelors Degree in Computer Engineering and concentration in Software Engineering and Development in May 2024. In the next year, 2025, I'll be receiving my Masters Degree in the same field through the AMP Program at Stevens. I've always enjoyed technology, problem solving with others, and I hope to be able to pursue this in my future career. In my free time I enjoy playing volleyball, working out, sightseeing, and reading!
               </p>
             </div>
             <div className='lg:w-full lg:flex-wrap lg:ml-[40px] sm:w-[365px]  flex mt-[25px] ml-[10px]'>
