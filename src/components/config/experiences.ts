@@ -10,6 +10,7 @@ const workExperiences = [
     points: [
       "Piloting development of internal app using ReactJS, TailwindCSS, ExpressJS, NodeJS, and an AWS database to centralize the 3D Printing Lab’s intake request system which saves close to 500 hours from troubleshooting current system issues.",
       "Leveraging Autodesk and internal APIs with OAuth to securely integrate the new internal application’s functionalities, ensuring authentication and seamless communication between system components for improved performance.",
+      "Employing AWS EC2 for scalable and reliable app deployment, ensuring high availability and cost-effective hosting.",
       "Utilizing Power Automate to streamline workflows for project requests and increase efficiency through automation.",
       "Coordinating through Scrum methodology and weekly standups, enhancing team development and communication."
     ]

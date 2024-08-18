@@ -8,7 +8,7 @@ import EducationCard from './EducationCard';
 
 const Experience = () => {
   return (
-    <section className='grid place-content-center py-[60px] px-[100px] w-[100vw] max-w-full' data-aos="fade-up" data-aos-once="true" id='experience'>
+    <section className='grid place-content-center py-[60px] sm:px-[5px] px-[100px] w-[100vw] max-w-full' data-aos="fade-up" data-aos-once="true" id='experience'>
       <div className="text-[3rem] font-bold text-center underline decoration-2 decoration-[#9ea0a5] underline-offset-[10px]">Experience</div>
       <div className="mt-[25px] grid place-content-center">
           <a 
@@ -20,7 +20,7 @@ const Experience = () => {
           </a>
         </div>
       <div className="flex flex-col ">
-        <div className='text-3xl font-bold mt-10 ml-12'>Education</div>
+        <div className='text-3xl font-bold mt-10 ml-12 sm:text-center sm:ml-0'>Education</div>
         <VerticalTimeline layout='1-column-left'>
           {
             educations.map((education, index) => (
@@ -32,7 +32,7 @@ const Experience = () => {
           }
         </VerticalTimeline>
 
-        <div className='text-3xl font-bold mt-10 ml-12'>Work Experience</div>
+        <div className='text-3xl font-bold mt-10 ml-12 sm:text-center sm:ml-0'>Work Experience</div>
         <VerticalTimeline layout='1-column-left'>
           {
             workExperiences.map((experience, index) => (

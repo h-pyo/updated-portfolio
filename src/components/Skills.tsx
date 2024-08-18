@@ -13,6 +13,7 @@ import mongo from '../images/mongo.png';
 import tailwind from '../images/tailwind.png';
 import typescript from '../images/typescript.png';
 import next from '../images/next.png';
+import EC2 from '../images/EC2.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -81,6 +82,10 @@ const Skills = () => {
           <SkillItem
             image={next}
             description="Next.js"
+          />
+          <SkillItem
+            image={EC2}
+            description='AWS EC2'
           />
         </div>
       </div>
