@@ -1,13 +1,19 @@
-const particlesConfig = {
+import type { ISourceOptions } from "@tsparticles/engine";
+
+const particlesConfig : ISourceOptions = {
   fullScreen: {
     enable: false
   },
-  background: "transparent",
+  background: {
+    opacity: 1
+  },
   fpsLimit: 120,
   interactivity: {
     events: {
-      resize: true,
-    },
+      resize: {
+        enable: true,
+      }
+    }
   },
   particles: {
     color: {
@@ -33,7 +39,8 @@ const particlesConfig = {
     number: {
       density: {
         enable: true,
-        area: 800,
+        height: 800,
+        width: 800
       },
       value: 45,
     },

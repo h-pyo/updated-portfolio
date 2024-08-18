@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -25,8 +29,31 @@ body {
   color: var(--clr--light);
   background-color: var(--clr--dark);
 }
+.vertical-timeline::before {
+  display: none;
+}
 
-.header {
+.vertical-timeline-element::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    height: calc(100% + 30px);
+    width: 4px;
+    background: white;
+}
+
+.vertical-timeline-element:is(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    height: calc(100%);
+    width: 4px;
+    background: white;
+}
+
+/* .header {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
@@ -34,10 +61,10 @@ body {
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
   text-decoration-color: #9ea0a5;
-}
+} */
 
 /*--------------------------Nav Section-----------------*/
-.nav-header {
+/* .nav-header {
   padding-top: 15px;
   top:0;
   position: fixed;
@@ -90,15 +117,15 @@ nav .menu span {
 .list-item a:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
-}
+} */
 
 /*----------------------Home Section--------------*/
-#animated-area {
+/* #animated-area {
   position: relative;
   height: 100vh;
   margin-bottom: 100px;
   background: linear-gradient(to bottom,  #00ADB5 0%,#222831 100%);
-}
+} */
 
 canvas {
   position: absolute;
@@ -107,7 +134,7 @@ canvas {
   z-index: 1;
 }
 
-.home {
+/* .home {
   width: 100vw;
   padding-left:50px;
   padding-right:50px;
@@ -148,10 +175,10 @@ canvas {
 
 .social-icons a:hover {
   opacity: 0.8;
-}
+} */
 
 /*-------------------About Section--------------*/
-.about {
+/* .about {
   display: grid;
   place-content: center;
   padding: 60px 100px;
@@ -206,7 +233,7 @@ canvas {
   margin-right: 30px;
   display: grid;
   place-content: center;
-}
+} */
 
 .icon-border:hover{
   animation: shadow 1.5s;
@@ -224,13 +251,13 @@ canvas {
   }
 }
 
-.about-icon {
+/* .about-icon {
   width: 110px;
-}
+} */
 
 /*--------------------Skills Section------------------------*/
 
-.skills {
+/* .skills {
   display: grid;
   place-content: center;
   padding: 60px 100px;
@@ -305,11 +332,11 @@ canvas {
 .skill-tag {
   font-size: 1.3rem;
   text-align: center;
-}
+} */
 
 /*-----------------Projects Section---------------------------*/
 
-.projects {
+/* .projects {
    padding: 60px 100px;
    display: grid;
    place-content: center;
@@ -349,11 +376,11 @@ canvas {
 .project-image {
   width: 330px;
   border-radius: 40px;
-}
+} */
 
 /*-----------------------------Project Page Seciton---------------------*/
 
-.project-page {
+/* .project-page {
   display:grid;
   place-content: center;
 }
@@ -431,11 +458,11 @@ canvas {
   margin-left: 40px;
   margin-right: 40px;
   font-size: 1.2rem;
-}
+} */
 
 /*-----------------------------Contact Form-----------------------*/
 
-.contact {
+/* .contact {
    display: grid;
    place-content: center;
    height: 100vh;
@@ -487,7 +514,7 @@ canvas {
   display:flex;
   margin-bottom: 20px;
   align-items: center;
-}
+} */
 
 form {
   display: grid;
@@ -495,7 +522,7 @@ form {
   grid-template-rows: auto 1fr auto auto;
 }
 
-.name-email {
+/* .name-email {
   grid-column-start: 1;
   grid-column-end: 3;
   width: 450px;
@@ -578,10 +605,10 @@ form {
   color: rgb(221, 82, 82);
   font-size: 1.1rem;
   display: none;
-}
+} */
 
 /*-----------------------------Media Queries-------------------*/
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .picture {
     width: 400px;
     margin: 0;
@@ -739,4 +766,4 @@ form {
   .project-description {
     text-align: center;
   }
-}
+} */
