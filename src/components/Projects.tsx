@@ -31,11 +31,6 @@ const Projects = () => {
             title="Todo List Website"
             link="project-3"
           />
-          <ProjectItem
-            image={weather}
-            title="Weather App"
-            link="project-4"
-          />
         </div>
       </div>
     </section>
