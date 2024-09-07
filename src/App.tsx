@@ -34,13 +34,6 @@ function App() {
           link="https://harris-todo-list.netlify.app/"
           description="A todo-list website I created with HTML, CSS, and Javascript as practice. Allows for users to create and delete different lists with tasks and dates. Completed in August 2023."
         />} />
-        <Route path='project-4' element={<ProjectPage
-          image={weather}
-          title="Weather App"
-          repo="https://github.com/h-pyo/weather-app"
-          link="https://harris-weather-app.netlify.app/"
-          description="A weather website that shows the user weather information for the searched city using the OpenWeather API and generates an image of the same city using the Unsplash API. Furthermore, users are able to switch between metric and imperial units. Completed in July 2023."
-        />} />
       </Route>
     </Routes>
   );

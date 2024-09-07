@@ -1,18 +1,28 @@
 import MerckIcon from '../../images/Merck-Co-Logo.png';
 import StevensIcon from '../../images/stevens-logo.png';
+import AllSourceIcon from '../../images/AllSource.png';
 
 const workExperiences = [
   {
-    title: "Software Engineer Intern",
-    company: "Merck & Co., Inc. - Rahway, NJ",
-    date: "June 2024 - Present",
-    icon: MerckIcon,
+    title: "Software Developer",
+    company: "AllSourcePPS / Merck & Co., Inc. - Rahway, NJ",
+    date: "August 2024 - Present",
+    icon: AllSourceIcon,
     points: [
-      "Piloting development of internal app using ReactJS, TailwindCSS, ExpressJS, NodeJS, and an AWS database to centralize the 3D Printing Lab’s intake request system which saves close to 500 hours from troubleshooting current system issues.",
       "Leveraging Autodesk and internal APIs with OAuth to securely integrate the new internal application’s functionalities, ensuring authentication and seamless communication between system components for improved performance.",
       "Employing AWS EC2 for scalable and reliable app deployment, ensuring high availability and cost-effective hosting.",
-      "Utilizing Power Automate to streamline workflows for project requests and increase efficiency through automation.",
-      "Coordinating through Scrum methodology and weekly standups, enhancing team development and communication."
+      "Constructing new workspaces within Autodesk PLM for various internal teams, optimizing project and job management by streamlining workflows, enhancing productivity, and enabling more efficient collaboration."
+    ]
+  },
+  {
+    title: "Software Engineer Intern",
+    company: "Merck & Co., Inc. - Rahway, NJ",
+    date: "June 2024 - August 2024",
+    icon: MerckIcon,
+    points: [
+      "Piloted development of internal app using ReactJS, TailwindCSS, ExpressJS, NodeJS, and an AWS RDS database to centralize the 3D Printing Lab’s intake request system which saved close to 500 hours from troubleshooting current system issues.",
+      "Utilized Power Automate with intake forms to streamline workflows for project requests, increase efficiency through automation, and save about $60,000 yearly from software licenses.",
+      "Coordinated through Scrum methodology with weekly standups, sprint planning sessions, and retrospective sessions to enhance development, communication, and ensure timely project delivery. "
     ]
   },
   {
@@ -21,8 +31,8 @@ const workExperiences = [
     date: "January 2023 - August 2023",
     icon: StevensIcon,
     points: [
-      "Collaborated with a team of undergraduate and graduate students to build a text formatting system that has interactive elements such as quizzes and live coding exercise.",
-      "Implemented a full-stack web application that can create graphs and documents using languages such as Regex, Java, HTML, CSS, and JavaScript."
+      "Collaborated with a team of students to build a text formatting system with interactive quizzes and live coding exercises",
+      "Developed a full-stack web app for creating graphs and documents using Regex, Java, HTML, CSS, and JavaScript."
     ]
   },
   {
