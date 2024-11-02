@@ -53,7 +53,8 @@ const educations = [
     school: "Stevens Institute of Technology - Hoboken, NJ",
     date: "September 2024 - May 2025",
     icon: StevensIcon,
-    concentration: "Software & Data Engineering",
+    concentration: "Artificial Intelligence",
+    courses: "Applied Discrete Mathematics, Web Programming II, Applied Machine Learning, Data Acquisition: Deep Learning"
   },
   {
     degree: "Bachelors Of Engineering in Computer Engineering",

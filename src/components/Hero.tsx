@@ -21,7 +21,7 @@ const Hero = () => {
               1000,
               " a Computer Engineer",
               1000,
-              " an Merck Intern",
+              " a Merck Intern",
               1000,
               " a Volleyball Enthusiast",
               1000,
