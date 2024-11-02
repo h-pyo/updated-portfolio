@@ -7,7 +7,6 @@ import c from '../images/c.png';
 import python from '../images/python.png';
 import react from '../images/atom.png';
 import node from '../images/nodejs.png';
-import boot from '../images/bootstrap.png';
 import express from '../images/express.png';
 import mongo from '../images/mongo.png';
 import tailwind from '../images/tailwind.png';
@@ -23,10 +22,10 @@ const Skills = () => {
     AOS.init();
   }, [])
   return (
-    <section className='grid place-content-center py-[60px] px-[100px] w-[100vw] max-w-full' data-aos="fade-up" data-aos-once="true" id='qualifications'>
+    <section className='grid place-content-center py-[40px] px-[100px] w-[100vw] max-w-full' data-aos="fade-up" data-aos-once="true" id='qualifications'>
       <div>
         <div className="text-[3rem] font-bold text-center underline decoration-2 decoration-[#9ea0a5] underline-offset-[10px]">Skills</div>
-        <div className="lg:w-[600px] sm:w-[400px] flex flex-wrap justify-center w-[1200px] mt-[30px]">
+        <div className="lg:w-[600px] sm:w-[320px] flex flex-wrap justify-center w-[1200px] mt-[30px]">
           <SkillItem
             image={js}
             description="Javascript"
@@ -50,10 +49,6 @@ const Skills = () => {
           <SkillItem
             image={python}
             description="Python"
-          />
-          <SkillItem
-            image={boot}
-            description="Bootstrap"
           />
           <SkillItem
             image={react}

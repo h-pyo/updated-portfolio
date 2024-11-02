@@ -29,21 +29,21 @@ const Contact = () => {
   };
   return (
     <section className="grid place-content-center h-[100vh]" id='contact-form' data-aos="fade-up" data-aos-once="true"> 
-      <div className="lg:w-[400px] lg:px-[15px] lg:pt-[15px] lg:pb-[50px] bg-dark2 w-[1000px] rounded-[90px] flex flex-col mt-0 pt-[15px] pr-[40px] pb-[50px] pl-[50px]">
-        <div className="text-[3rem] font-bold text-center underline decoration-2 decoration-[#9ea0a5] underline-offset-[10px]">Contact Me</div>
+      <div className="lg:w-[400px] lg:px-[15px] lg:pt-[15px] lg:pb-[50px] bg-dark2 w-[1000px] sm:w-[310px] rounded-[90px] flex flex-col mt-0 pt-[15px] pr-[40px] pb-[50px] sm:pb-[25px] pl-[50px]">
+        <div className="text-[3rem] sm:text-[2.5rem] font-bold text-center underline decoration-2 decoration-[#9ea0a5] underline-offset-[10px]">Contact Me</div>
 
         <div className="lg:flex-col mt-[30px] flex">
 
-          <div className="lg:mr-[50px] ml-10 mr-[70px] flex flex-col">
+          <div className="lg:mr-[50px] ml-10 mr-[70px] sm:mr-0 sm:ml-[8px] flex flex-col">
             <div className="flex items-center mb-[30px]">
-              <FaEnvelope className="text-[1.5rem] mr-[5px]" />
+              <FaEnvelope className="text-[1.5rem] sm:text-[1rem] mr-[5px]" />
               <div className="lg:mr-[50px] ml-10 mr-[70px] flex flex-col">
                 <span className="font-bold text-[1.4rem]">Email:</span>
                 <span className="text-[1.1rem]">harrispyo@gmail.com</span>
               </div>
             </div>
             <div className="flex mb-5 items-center">
-              <FaPhoneAlt className="text-[1.5rem] mr-[5px]" />
+              <FaPhoneAlt className="text-[1.5rem] sm:text-[1rem] mr-[5px]" />
               <div className="lg:mr-[50px] ml-10 mr-[70px] flex flex-col">
                 <span className="font-bold text-[1.4rem]">Phone:</span>
                 <span className="text-[1.1rem]">+1 732-425-7406</span>

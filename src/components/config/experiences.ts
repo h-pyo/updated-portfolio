@@ -21,7 +21,7 @@ const workExperiences = [
     icon: MerckIcon,
     points: [
       "Piloted development of internal app using ReactJS, TailwindCSS, ExpressJS, NodeJS, and an AWS RDS database to centralize the 3D Printing Lab’s intake request system which saved close to 500 hours from troubleshooting current system issues.",
-      "Utilized Power Automate with intake forms to streamline workflows for project requests, increase efficiency through automation, and save about $60,000 yearly from software licenses.",
+      "Utilized Power Automate with intake forms to streamline workflows for project requests, increase efficiency through automation, and save about $100,000 yearly from software licenses.",
       "Coordinated through Scrum methodology with weekly standups, sprint planning sessions, and retrospective sessions to enhance development, communication, and ensure timely project delivery. "
     ]
   },
